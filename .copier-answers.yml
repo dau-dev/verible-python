@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier
+_commit: ea9f24b
+_src_path: https://github.com/python-project-templates/base.git
+add_extension: python
+email: dev@dau.dev
+github: dau-dev
+project_description: Python wrapping/binding for verible
+project_name: verible
+python_version_primary: '3.11'
+team: the verible-python authors
