@@ -128,14 +128,6 @@ include = [
     "LICENSE",
     "README.md",
 ]
-exclude = [
-    "/.github",
-    "/scripts",
-    "/src",
-    "/.gitmodules",
-    "/.gitignore",
-    "/pyproject.toml",
-]
 
 [tool.hatch.build.targets.wheel.hooks.custom]
 
@@ -144,16 +136,11 @@ packages = [
     "verible",
 ]
 exclude = [
-    "/.github",
-    "/scripts",
     "/src",
-    "/.gitmodules",
-    "/.gitignore",
-    "/pyproject.toml",
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"verible/bin" = "verible/bin"
+"verible/bin" = "bin"
 
 [tool.pytest.ini_options]
 addopts = [

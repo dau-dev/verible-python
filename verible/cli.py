@@ -1,11 +1,9 @@
 from functools import lru_cache
-from os import name
 from pathlib import Path
 from shutil import which
 from subprocess import Popen
 from sys import exit, stderr, stdout
 from time import sleep
-
 
 VERIBLE_TOOLS = [
     "verible-verilog-syntax",
@@ -43,7 +41,7 @@ def main():
     from sys import argv as _argv
 
     if len(_argv) < 2:
-        print(f"Usage: verible-cli <tool> [args...]")
+        print("Usage: verible-cli <tool> [args...]")
         print(f"Available tools: {', '.join(VERIBLE_TOOLS)}")
         exit(1)
 
