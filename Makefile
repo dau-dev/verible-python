@@ -33,9 +33,10 @@ dependencies-win:
 
 build-verible:  ## build verible
 	git submodule update --init --recursive
+	rm -f src/.bazelversion
 	cd src && bazel build -c opt //...
 	mkdir -p ../verible/bin
-	cp -r bazel-bin/verilog/tools/* ../verible/bin/ || true
+	find bazel-bin/verible/verilog/tools -type f -name 'verible-verilog-*' ! -name '*.runfiles_manifest' ! -name '*.repo_mapping' ! -name '*.params' ! -name '*.cppmap' ! -name '*.d' ! -name '*.o' -exec cp {} ../verible/bin/ \; || true
 	find ../verible/bin -name '*.runfiles_manifest' -delete
 	find ../verible/bin -name '*.runfiles' -type d -prune -exec rm -rf {} + 2>/dev/null || true
 

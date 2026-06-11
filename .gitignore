@@ -144,19 +144,7 @@ _template/labextension
 # Rust
 target
 
-# Verilator
-verilator/bin/
-verilator/examples/
-verilator/include/
-verilator/verilator-config-version.cmake
-verilator/verilator-config.cmake
+# Verible 
+verible/bin/
+logs
 
-# Verilator generated
-logs/
-verilator/tests/module/logs/
-verilator/tests/module/obj_dir/
-verilator/tests/module/*.cpp
-verilator/tests/module/*.h
-verilator/tests/module/*.mk
-verilator/tests/module/*.dat
-verilator/tests/module/Vff_top

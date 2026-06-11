@@ -153,7 +153,7 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"verible/bin" = "bin/verible"
+"verible/bin" = "verible/bin"
 
 [tool.pytest.ini_options]
 addopts = [
