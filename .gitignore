@@ -8,13 +8,10 @@ __pycache__/
 *.o
 *.dSYM
 *.so
-<<<<<<< before updating
 *.a
 *.o
 *.d
-=======
 *.obj
->>>>>>> after updating
 *.dll
 *.exp
 *.lib
@@ -142,9 +139,9 @@ js/*.tgz
 .ipynb_checkpoints
 .autoversion
 Untitled*.ipynb
-verible/extension
-verible/nbextension
-verible/labextension
+verilator/extension
+verilator/nbextension
+verilator/labextension
 
 # Emscripten SDK (locally installed)
 emsdk
@@ -156,15 +153,12 @@ emsdk
 outputs/
 multirun/
 
-<<<<<<< before updating
-# Verible 
-verible/bin/
-logs
-
-=======
 # AI
 ROADMAP.md
 AGENTS.md
 .github/hooks/sdlc.json
 .superpowers
->>>>>>> after updating
+
+# Verible 
+verible/bin/
+logs
