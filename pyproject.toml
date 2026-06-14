@@ -12,7 +12,11 @@ authors = [
 description = "Python wrapping/binding for verible"
 readme = "README.md"
 license = { text = "Apache-2.0" }
+<<<<<<< before updating
 version = "0.0.4071.0"
+=======
+version = "0.1.0"
+>>>>>>> after updating
 requires-python = ">=3.10"
 keywords = []
 
@@ -38,7 +42,10 @@ develop = [
     "build",
     "bump-my-version",
     "check-dist",
+<<<<<<< before updating
     "cibuildwheel",
+=======
+>>>>>>> after updating
     "codespell",
     "hatchling",
     "mdformat",
@@ -75,6 +82,7 @@ filename = "pyproject.toml"
 search = 'version = "{current_version}"'
 replace = 'version = "{new_version}"'
 
+<<<<<<< before updating
 [tool.cibuildwheel]
 build = "cp310-* cp311-* cp312-* cp313-* cp314-*"
 test-command = "echo 'TODO'"
@@ -96,6 +104,8 @@ before-all = """make dependencies-win && make build-verible && make copy-verible
 archs = "AMD64"
 skip = "*win32 *arm_64"
 
+=======
+>>>>>>> after updating
 [tool.coverage.run]
 branch = true
 omit = [
@@ -121,6 +131,7 @@ src = "/"
 [tool.hatch.build.targets.sdist]
 packages = [
     "verible",
+<<<<<<< before updating
     "hatch_build.py",
     "src",
 ]
@@ -130,14 +141,20 @@ include = [
 ]
 
 [tool.hatch.build.targets.wheel.hooks.custom]
+=======
+]
+>>>>>>> after updating
 
 [tool.hatch.build.targets.wheel]
 packages = [
     "verible",
 ]
+<<<<<<< before updating
 exclude = [
     "/src",
 ]
+=======
+>>>>>>> after updating
 
 [tool.hatch.build.targets.wheel.shared-data]
 "verible/bin" = "bin"
