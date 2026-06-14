@@ -56,7 +56,7 @@ lint-py:  ## lint python with ruff
 
 lint-docs:  ## lint docs with mdformat and codespell
 	python -m mdformat --check README.md
-	python -m codespell_lib README.md
+	python -m codespell_lib README.md 
 
 fix-py:  ## autoformat python code with ruff
 	python -m ruff check --fix verible
