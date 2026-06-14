@@ -9,7 +9,6 @@ Python wrapping/binding for verible
 
 ## Overview
 
-<<<<<<< before updating
 Wrapper of [verible](https://github.com/chipsalliance/verible), distributed via PyPI. Verible is a suite of SystemVerilog developer tools including a parser, formatter, linter, and language server.
 
 ```bash
