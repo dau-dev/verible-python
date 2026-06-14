@@ -42,10 +42,7 @@ develop = [
     "build",
     "bump-my-version",
     "check-dist",
-<<<<<<< before updating
     "cibuildwheel",
-=======
->>>>>>> after updating
     "codespell",
     "hatchling",
     "mdformat",
